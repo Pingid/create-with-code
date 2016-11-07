@@ -1,1 +1,2 @@
-# Getting to grips with code
+# setup
+First we need
