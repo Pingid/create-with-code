@@ -1,3 +1,7 @@
 {
-  "gitbook": "3.2.2"
+    "gitbook": "3.2.2",
+    "plugins": [
+        "ace"
+    ],
+    "pluginsConfig": {}
 }
