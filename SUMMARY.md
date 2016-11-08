@@ -1,5 +1,6 @@
 # Summery
 
-* [Usefull](/website/usefull/README.md)
+* [Useful](/website/useful/README.md)
+  * [Browser tools](/website/useful/devtools.md)
 * [Workshops](/website/workshops/README.md)
-  * [Basics](/website/workshops/basics.md)
+  * [Setup](/website/workshops/setup.md)
