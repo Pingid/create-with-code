@@ -1,0 +1,321 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Setup · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="01-lets-draw.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../useful/">
+            
+                <a href="../useful/">
+            
+                    
+                    Useful
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Workshops
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="setup.html">
+            
+                <a href="setup.html">
+            
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="01-lets-draw.html">
+            
+                <a href="01-lets-draw.html">
+            
+                    
+                    Lets draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="setting-up">Setting up</h1>
+<h5 id="environment">Environment</h5>
+<p>First download <a href="https://atom.io" target="_blank">atom</a> this is a text editor but unlike textEdit on the mac this adds colors to your code making it easier to read. There is no other effective difference between the two you are welcome to write your code in textEdit but it will be harder to read.</p>
+<p>We will be using a library called <a href="http://p5js.org" target="_blank">p5</a>. This is a bunch of tools that will mean we can write a lot less code by calling the functions already declared in p5. You can download p5 <a href="https://github.com/processing/p5.js/releases/download/0.5.4/p5.js" target="_blank">here</a> and read more about it at <a href="http://p5js.org" target="_blank">p5js.org</a>.</p>
+<h5 id="files">Files</h5>
+<p>Create a folder somewhere you can remember on you computer and give it a name, I recommend your desktop. Open atom, under the &quot;file&quot; menu, in the top left corner of the screen, click on &quot;open&quot;, then navigate to the folder you created. Select the folder then click open in the bottom left corner of the window.</p>
+<p>Navigate back to the &quot;file&quot; menu and select &quot;new file&quot;, a new empty window should open where you should be able to type. When you type it will just look like plain text and in order to change this we need to tell atom what type of file we are typing in. Navigate back to the &quot;file&quot; menu and click &quot;save&quot;, make sure you are saving the file inside of your project folder and give it the name <code>index.html</code>. Repeat the previous process for a new file but this time save it as <code>script.js</code>. We also need to copy the p5.js file that we downloaded into our project folder.</p>
+<p><img src="../assets/setup-files.png" alt="alt tag"></p>
+<h5 id="adding-code">Adding code</h5>
+<p>The index.html is the file that your browser (safari, chrome) reads and this is where we link in are javascript code files &quot;script.js&quot; and &quot;p5.js&quot;. The html file has a bunch of what we call boilerplate essentially code that has to be in every file. Don&apos;t worry about remembering this you can just copy it from bellow.</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- The title appears on the browser tab for the site --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Boilerplate<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Links to the javascript files. Take note of the fact the p5 file is above the script file this is because we need that loaded first since we are using it inside of the script file --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;p5.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;script.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Next we need to add our code to script.js. First I would recommend checking if both your script.js and p5.js files are linked you can do this by going into script.js and writing <code>console.log(p5)</code>. When you open index.html in the browser check the console if there is text a bunch of text then everything is working if there is an error then p5.js isn&apos;t loading if there is nothing then script.js isn&apos;t loading. The issue in both of these cases is in the html either you have made a mistake writing the html or you haven&apos;t given the same name as the file name. If everything is working fine you can add the setup and draw functions.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Setup get called when before everything</span>
+<span class="hljs-comment">// I have created a new canvas which is the width and height of the window</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setup</span>(<span class="hljs-params"></span>) </span>{
+  createCanvas(innerWidth, innerHeight);
+}
+<span class="hljs-comment">// gets called repeatedly approximately 60 times a second</span>
+<span class="hljs-comment">// Drawing an ellipse of radius 80px at the current mouse position</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>) </span>{
+  ellipse(mouseX, mouseY, <span class="hljs-number">80</span>);
+}
+</code></pre>
+<p>You are now ready to go!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Workshops">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="01-lets-draw.html" class="navigation navigation-next " aria-label="Next page: Lets draw">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Setup","level":"1.3.1","depth":2,"next":{"title":"Lets draw","level":"1.3.2","depth":2,"path":"website/workshops/01-lets-draw.md","ref":"website/workshops/01-lets-draw.md","articles":[]},"previous":{"title":"Workshops","level":"1.3","depth":1,"path":"website/workshops/README.md","ref":"website/workshops/README.md","articles":[{"title":"Setup","level":"1.3.1","depth":2,"path":"website/workshops/setup.md","ref":"website/workshops/setup.md","articles":[]},{"title":"Lets draw","level":"1.3.2","depth":2,"path":"website/workshops/01-lets-draw.md","ref":"website/workshops/01-lets-draw.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.2.2","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"website/workshops/setup.md","mtime":"2016-11-09T16:57:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-23T21:28:02.015Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

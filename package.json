@@ -1,0 +1,26 @@
+{
+  "name": "create-with-code",
+  "version": "1.0.0",
+  "description": "Creative coding workshops",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build",
+    "docs:publish": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push https://github.com/Pingid/create-with-code.git gh-pages --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pingid/create-with-code.git"
+  },
+  "author": "Dan Beaven <dm.beaven@gmail.com> (http://danbeaven.co.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pingid/create-with-code/issues"
+  },
+  "homepage": "https://github.com/Pingid/create-with-code#readme",
+  "devDependencies": {
+    "gitbook-cli": "2.3.0"
+  }
+}
